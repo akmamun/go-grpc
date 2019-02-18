@@ -29,11 +29,11 @@ sudo mv protoc3/include/* /usr/local/include/
 ```
 
 ## Run Proto Buffer Generator 
+- Dot means same directory of proto file 
 ```go
 protoc folder_name/file_name.proto --go_out=plugins=grpc:.
 example: protoc proto/helloworld.proto --go_out=plugins=grpc:.
 ```
-### Dot means same directory of proto file 
 ### if want to change write name of directory
 ```go
 protoc folder_name/file_name.proto --go_out=plugins=grpc:/directory_name
